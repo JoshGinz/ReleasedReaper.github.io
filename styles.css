@@ -246,10 +246,11 @@ footer .address h4 {
     width: 100px;
     height: 100px;
     border-radius: 50%; /* This gives the circular appearance */
+    border: 3px solid #00FFC5; /* Turquoise border */
+    box-shadow: 0px 0px 15px rgba(0, 255, 197, 0.5); /* Turquoise shadow */
     margin-right: 20px;
-    background-color: #007BFF; /* Change this to your preferred color */
-    border: 5px solid #007BFF; /* A border matching the background for a more cohesive look */
 }
+
 ...
 
 /* You might need to add more styles or adjust existing ones to match the exact design */
