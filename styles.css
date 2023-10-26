@@ -1,95 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1E242A;
+    color: white;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
+    text-align: center;
+    padding: 20px;
     border-bottom: #bbb 1px solid;
-}
-
-header a {
-    color: #fff;
-    padding: 0 20px;
-    text-decoration: none;
-}
-
-header ul {
-    padding: 0;
-}
-
-header li {
-    list-style: none;
-    display: inline;
 }
 
 header h1 {
     font-size: 24px;
+    margin: 0;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    background-color: #f1f1f1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #2A353C;
 }
 
-nav a {
+nav a, nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .logo {
+    font-size: 24px;
     font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover, nav ul li a:hover {
+    background-color: #1E242A;
     text-decoration: underline;
 }
 
-main {
-    padding: 15px;
-}
-
-main h2 {
-    font-size: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
+.main, #about, #projects, section {
     padding: 20px;
-    text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.intro-content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn, .intro button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #00FFC5;
+    color: white;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover, .intro button:hover {
+    background-color: #00CCAA;
+}
+
+.headshot, .profile-pic {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #00FFC5;
+    box-shadow: 0px 0px 15px rgba(0, 255, 197, 0.5);
+    flex-shrink: 0;
+    margin-right: 50px;
 }
 
 .profile-pic {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-}
-
-#about, #projects, section {
-    padding: 20px;
 }
 
 .project-card {
@@ -104,183 +131,3 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
-
-/* Add your existing styles above */
-
-/* Styles from the provided template */
-/* Reset some default browser styles */
-body, h1, h2, h3, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1E242A;
-    color: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: #2A353C;
-}
-
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #1E242A;
-}
-
-.main {
-    padding: 50px;
-}
-
-.intro {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 50px 0;
-}
-
-.intro h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.intro h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.intro p {
-    margin-bottom: 20px;
-}
-
-.intro button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #1E242A;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.intro button:hover {
-    background-color: #2A353C;
-}
-
-.social-media {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.recent-projects {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.projects-carousel {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project-item {
-    max-width: 300px;
-    text-align: left;
-}
-
-.project-item img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.project-item h3 {
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-footer {
-    padding: 20px;
-    background-color: #2A353C;
-    text-align: center;
-}
-
-footer .address h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-
-...
-.intro-content {
-    display: flex;
-    align-items: center;
-}
-
-.headshot {
-    width: 300px; 
-    height: 300px;
-    border-radius: 50%;
-    border: 3px solid #00FFC5;
-    box-shadow: 0px 0px 15px rgba(0, 255, 197, 0.5);
-    object-fit: cover;
-    flex-shrink: 0; 
-    margin-right: 50px; 
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 50px 0; 
-}
-
-.intro-content {
-    max-width: 600px; 
-}
-
-.btn {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: #00FFC5;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #00CCAA;
-}
-
-
-...
-
-/* You might need to add more styles or adjust existing ones to match the exact design */
-
