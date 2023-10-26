@@ -243,13 +243,42 @@ footer .address h4 {
 }
 
 .headshot {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* This gives the circular appearance */
-    border: 3px solid #00FFC5; /* Turquoise border */
-    box-shadow: 0px 0px 15px rgba(0, 255, 197, 0.5); /* Turquoise shadow */
-    margin-right: 20px;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #00FFC5;
+    box-shadow: 0px 0px 15px rgba(0, 255, 197, 0.5);
+    object-fit: cover;
+    flex-shrink: 0; 
+    margin-right: 50px; 
 }
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 50px 0; 
+}
+
+.intro-content {
+    max-width: 600px; 
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #00FFC5;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00CCAA;
+}
+
 
 ...
 
