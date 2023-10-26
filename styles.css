@@ -235,5 +235,22 @@ footer .address h4 {
     margin-bottom: 10px;
 }
 
+
+...
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.headshot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* This gives the circular appearance */
+    margin-right: 20px;
+    background-color: #007BFF; /* Change this to your preferred color */
+    border: 5px solid #007BFF; /* A border matching the background for a more cohesive look */
+}
+...
+
 /* You might need to add more styles or adjust existing ones to match the exact design */
 
