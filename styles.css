@@ -33,12 +33,11 @@ nav a {
 }
 
 .left-section {
+    width: 40%; /* Adjusted the width */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 50px; /* Add some margin to separate the left section from the right */
 }
-
 
 .headshot {
     width: 250px;
@@ -54,15 +53,13 @@ nav a {
 }
 
 .intro-card {
-    max-width: 600px;
-    margin: 0;
+    width: 50%; /* Adjusted the width */
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Cyan shadow */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent White Background */
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
     box-sizing: border-box;
-}
 
 .projects h2,
 .footer h2 {
@@ -96,6 +93,10 @@ nav a {
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Adjusted to space-between for better spacing */
     align-items: center;
+    max-width: 1200px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding on the sides */
 }
+
