@@ -155,8 +155,8 @@ footer {
 }
 
 .intro-card {
-    width: 250px;  /* Set the width of the box */
-    min-height: 151.5px;  /* Set the minimum height of the box */
+    width: 350px;  /* Set the width of the box */
+    min-height: 216.3px;  /* Set the minimum height of the box */
     box-sizing: border-box;  /* Include padding and border in the element's total width and height */
     flex-basis: auto;  /* Set the initial size of the flex item */
     flex-grow: 0;  /* Do not allow the item to grow */
