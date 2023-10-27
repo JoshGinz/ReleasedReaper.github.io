@@ -1,196 +1,104 @@
-body, h1, h2, h3, p, ul, li, a {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #1E242A;
-    color: white;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    border-bottom: #bbb 1px solid;
-}
-
-header h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: #2A353C;
+    padding: 10px 5%;
+    background-color: #222;
+    color: #FFF;
 }
 
-nav a, nav ul li a {
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 10px;
+    color: #FFF;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav a:hover, nav ul li a:hover {
-    background-color: #1E242A;
+nav a:hover {
     text-decoration: underline;
 }
 
-.main, #about, #projects, section {
-    padding: 20px;
-}
-
-
-
-.intro-content {
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-}
-
-.intro h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.intro h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.btn, .intro button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    background-color: #00FFC5;
-    color: white;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.btn:hover, .intro button:hover {
-    background-color: #00CCAA;
-}
-
-.headshot, .profile-pic {
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.headshot {
-    width: 300px;
-    height: 300px;
-    border: 3px solid #00FFC5;
-    box-shadow: 0px 0px 15px rgba(0, 255, 197, 0.5);
-    flex-shrink: 0;
-    margin-right: 50px;
-}
-
-.profile-pic {
-    width: 100px;
-    height: 100px;
-}
-
-.project-card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-top: 15px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-
-
 .intro {
     display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 50px 0;
-    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5% 0;
 }
 
 .left-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    margin-right: 50px;
+    margin-right: 2%; /* for spacing between photo box and intro card */
 }
 
-.greeting {
-    text-align: center;
-    margin-bottom: 20px; /* Adjust this value if you want to increase or decrease the space between the text and the image. */
+.left-section .headshot {
+    width: 150px; /* adjust this as needed */
+    height: 150px;
+    border-radius: 50%; /* for circular shape */
+    margin: 10px 0;
 }
-
 
 .intro-card {
-    max-width: 600px;
-    margin: 10% auto;
+    max-width: 400px;  /* Adjust as needed */
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);  /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white */
     box-sizing: border-box;
 }
 
-
-/* If the box needs more vertical spacing on larger screens */
-@media screen and (min-width: 768px) {
-    .intro-card {
-        margin: 15% auto;
-    }
+.btn {
+    display: inline-block;
+    margin-top: 15px; /* spacing */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-
-.intro-card h3 {
-    font-size: 18px; /* Adjust as per preference */
-    margin-bottom: 10px; /* Provide some spacing */
+.btn:hover {
+    background-color: #0056b3; /* a darker blue on hover */
 }
 
-.intro-card p {
-    font-size: 12px; /* Adjust font size to fit content */
-    margin-bottom: 15px;
-    line-height: 1.4; /* Control spacing between lines */
+.social-icons .icon {
+    margin-right: 10px; /* spacing between icons */
+    text-decoration: none;
+    color: #007BFF;
 }
 
-.intro-card .btn {
-    align-self: center; /* Center the button horizontally */
+.projects {
+    padding: 5% 5%;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adjust gap between icons */
+.project-item {
+    margin-bottom: 20px;
 }
 
-.icon {
-    font-size: 16px; /* Adjust icon size */
+footer {
+    padding: 2% 5%;
+    background-color: #222;
+    color: #FFF;
 }
 
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
