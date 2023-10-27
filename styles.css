@@ -151,14 +151,15 @@ footer {
 
 
 .intro-card {
-    max-width: 600px;  /* Set this to a value that looks best for your design */
-    margin: 10% auto; /* Vertical centering, you can adjust the 10% value */
-    padding: 20px;    /* Adjust the padding for the inside of the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-    border-radius: 10px;  /* Optional: Rounds the edges of the box */
-    background-color: #fff;  /* Assuming the box is white, change if needed */
-    box-sizing: border-box;  /* Ensures padding and borders don't increase size */
+    max-width: 600px;
+    margin: 10% auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);  /* Semi-transparent white background */
+    box-sizing: border-box;
 }
+
 
 /* If the box needs more vertical spacing on larger screens */
 @media screen and (min-width: 768px) {
