@@ -175,11 +175,12 @@ footer {
 }
 
 .intro-card {
+    width: 350px;
+    min-height: 216.30px;
     background-color: #2A353C;
     border-radius: 20px;
     padding: 40px;
     text-align: center;
-    width: 350px;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
     flex: 1; 
 }
