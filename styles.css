@@ -185,3 +185,26 @@ footer {
     justify-content: center;
     padding: 50px 0;
 }
+
+
+.intro {
+    display: flex;
+    padding: 50px 0;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px; /* Adjust this for spacing between the image and bio */
+}
+
+.greeting {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-card {
+    flex: 1; /* This will allow the bio to take up the remaining space on the right */
+}
