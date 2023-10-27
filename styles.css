@@ -61,13 +61,7 @@ nav a:hover, nav ul li a:hover {
     padding: 20px;
 }
 
-.intro {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    text-align: center;
-    padding: 50px 0;
-}
+
 
 .intro-content {
     max-width: 600px;
@@ -132,20 +126,6 @@ footer {
     color: #fff;
 }
 
-/* Integrated CSS from the intro-card */
-.intro-card {
-    background-color: #2A353C;
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    width: 350px;
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-}
-
-.intro-card h1 {
-    font-size: 24px;
-    margin: 0;
-}
 
 .intro-card h2 {
     font-size: 32px;
@@ -173,23 +153,12 @@ footer {
     text-decoration: none;
 }
 
-.greeting {
-    text-align: center;
-    margin-bottom: 30px; /* Adjust this value to control the spacing between the greeting and the image */
-}
-
 .intro {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     padding: 50px 0;
-}
-
-
-.intro {
-    display: flex;
-    padding: 50px 0;
+    text-align: center;
 }
 
 .left-section {
@@ -197,14 +166,21 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 50px; /* Adjust this for spacing between the image and bio */
+    margin-right: 50px; 
 }
 
 .greeting {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
 .intro-card {
-    flex: 1; /* This will allow the bio to take up the remaining space on the right */
+    background-color: #2A353C;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    flex: 1; 
 }
+
