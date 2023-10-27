@@ -1,104 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a2a; /* Dark Gray Background */
     margin: 0;
     padding: 0;
 }
 
 header {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 5%;
-    background-color: #222;
-    color: #FFF;
+    align-items: center;
+    background-color: #202020;
 }
 
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 24px;
+    color: #00FFFF; /* Cyan color for the logo */
 }
 
 nav a {
-    margin-left: 10px;
-    color: #FFF;
+    margin-left: 20px;
     text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    color: #00FFFF; /* Cyan color for the navigation links */
 }
 
 .intro {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 5% 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
 }
 
 .left-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 2%; /* for spacing between photo box and intro card */
 }
 
-.left-section .headshot {
-    width: 150px; /* adjust this as needed */
-    height: 150px;
-    border-radius: 50%; /* for circular shape */
-    margin: 10px 0;
+.headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Cyan shadow */
+}
+
+.greeting h1,
+.greeting h2 {
+    text-align: center;
+    color: white;
 }
 
 .intro-card {
-    max-width: 400px;  /* Adjust as needed */
+    max-width: 600px;
+    margin: 0;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Cyan shadow */
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent White Background */
+    color: white;
     box-sizing: border-box;
+}
+
+.projects h2,
+.footer h2 {
+    color: white;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 15px; /* spacing */
-    padding: 10px 15px;
-    border: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00FFFF; /* Cyan color for the button */
     border-radius: 5px;
-    background-color: #007BFF;
-    color: #fff;
     text-decoration: none;
-    cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #0056b3; /* a darker blue on hover */
+    background-color: #00B2B2;
 }
 
 .social-icons .icon {
-    margin-right: 10px; /* spacing between icons */
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.projects {
-    padding: 5% 5%;
-}
-
-.project-item {
-    margin-bottom: 20px;
-}
-
-footer {
-    padding: 2% 5%;
-    background-color: #222;
-    color: #FFF;
-}
-
-footer a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    margin-left: 10px;
+    color: #00FFFF; /* Cyan color for the icons */
 }
