@@ -87,7 +87,9 @@ nav a {
 }
 
 .linkedin-icon {
-    width: 7px;  /* Adjust this value if the icon appears too big or too small */
+    width: 7px;
     height: 7px;
+    box-shadow: 0px 0px 10px cyan; /* This gives the cyan shadow */
+    transform: translateY(10px); /* This moves the icon down by 10px */
 }
 
