@@ -94,3 +94,8 @@ nav a {
     transform: translateY(10px); /* This moves the icon down by 10px */
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
