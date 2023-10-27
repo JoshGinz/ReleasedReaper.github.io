@@ -127,26 +127,6 @@ footer {
 }
 
 
-.intro-card h2 {
-    font-size: 32px;
-    margin: 10px 0;
-}
-
-.intro-card h3 {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-.intro-card p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
 
 .icon {
     color: #ffffff;
@@ -175,13 +155,29 @@ footer {
 }
 
 .intro-card {
-    width: 250px;
-    min-height: 154.50px;
-    background-color: #2A353C;
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-    flex: 1; 
+    width: 250px;  /* Set the width of the box */
+    min-height: 151.5px;  /* Set the minimum height of the box */
+    box-sizing: border-box;  /* Include padding and border in the element's total width and height */
+    flex-basis: auto;  /* Set the initial size of the flex item */
+    flex-grow: 0;  /* Do not allow the item to grow */
+    flex-shrink: 1;  /* Allow the item to shrink */
+}
+
+.intro-card h2, .intro-card h3, .intro-card p {
+    font-size: 14px;  /* Reduce font size to fit the content */
+    line-height: 1.4;  /* Adjust line height for better readability */
+}
+
+.intro-card p {
+    margin-bottom: 15px;  /* Adjust bottom margin for paragraph */
+}
+
+.intro-card .btn {
+    padding: 8px 16px;  /* Adjust padding for the button */
+    font-size: 14px;  /* Adjust font size for the button */
+}
+
+.social-icons {
+    gap: 10px;  /* Reduce gap between social icons */
 }
 
