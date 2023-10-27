@@ -150,8 +150,8 @@ footer {
 }
 
 .intro-card {
-    width: 300px; /* Adjust this to your desired width */
-    max-height: 185.4px; /* Adjust to your desired height */
+    width: 350px; /* Adjust this to your desired width */
+    max-height: 216.3px; /* Adjust to your desired height */
     overflow-y: auto; /* Add a scrollbar if content overflows */
     background-color: #2A353C;
     border-radius: 20px;
