@@ -29,6 +29,7 @@ nav a {
     justify-content: center; /* Center the child elements */
     align-items: center;
     padding: 50px;
+    flex-direction: column;
 }
 
 .left-section {
