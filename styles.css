@@ -34,7 +34,7 @@ nav a {
 
 .left-section,
 .intro-card {
-    flex: 2;
+    flex-grow: 2;
 }
 
 .left-section {
