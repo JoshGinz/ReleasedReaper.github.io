@@ -34,7 +34,7 @@ nav a {
 
 .left-section,
 .intro-card {
-    flex: 1.2;
+    flex: 2;
 }
 
 .left-section {
@@ -101,7 +101,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 10%; /* Adjust this value to scale the container */
+    max-width: 100%; /* Adjust this value to scale the container */
     margin: 0 auto;
     padding: 0 20px;
 }
