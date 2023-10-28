@@ -85,6 +85,12 @@ nav a {
     background-color: #00B2B2;
 }
 
+.social-icons {
+    display: flex; /* Align children horizontally */
+    align-items: center; /* Center align vertically */
+    margin-top: 10px; /* Optional: add space above the icons */
+}
+
 .social-icons .icon {
     margin-left: 10px;
     color: #00FFFF; /* Cyan color for the icons */
