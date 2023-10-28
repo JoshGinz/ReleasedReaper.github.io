@@ -32,6 +32,11 @@ nav a {
     flex-direction: column;
 }
 
+.left-section,
+.intro-card {
+    flex: 1.2;
+}
+
 .left-section {
     flex: 1; /* Adjusted to take up remaining space */
     display: flex;
